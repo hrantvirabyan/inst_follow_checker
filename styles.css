@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+
+.navMenu {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+    white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  flex: 1; /* Distribute available space equally among the tabs */
+  text-align: center; /* Center the text within each tab */
+}
+
+.navMenu a:hover {
+  color: #33e23c;
+}
+.menu-line {
+  border: none;
+  border-top: 1px solid #33e23c;
+  margin-top: 60px; /* Add 20 pixels of top margin to move the line lower */
+  margin-bottom: 0; /* Optional: Remove any bottom margin to avoid additional spacing */
+  padding: 0;
+}
+.line-container {
+  width: 50%; /* Adjust the width to make the line shorter (e.g., 80% of the container width) */
+  margin: 0 auto; /* Center the line container horizontally */
+}
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #33e23c;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(120px);
+  transform: translateX(120px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(205px);
+  transform: translateX(205px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(289px);
+  transform: translateX(289px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(5):hover ~ .dot {
+  -webkit-transform: translateX(375px);
+  transform: translateX(375px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  color: #f6f4e6;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #EFF2F5;
+  margin-bottom: 10px;
+  font-size: 16px;
+  outline: none;
+  
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #33e23c;
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  font-family: "Montserrat", sans-serif;
+}
+
+button[type="submit"]:hover {
+  background-color: #1cdb25;
+}
+
+.centered-text {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  height: 20vh; /* Adjust this value if needed */
+  color: #f6f4e6; 
+  font-family: "Montserrat", sans-serif;
+}
+
+.centered-text h7 {
+  text-align: center;
+  line-height: 1;
+  height: 0px;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.direction_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh; /* Adjust this value if needed */
+  color: #f6f4e6; 
+  font-family: "Montserrat", sans-serif;
+  font-size: 116px;
+  text-align: center;
+  margin-bottom: -170px;
+}
+
+.keyboard-button {
+  
+  display: inline-block;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  font-weight: bold;
+  color: black;
+}
+
+
+.disclaimer {
+color:white;
+padding: 20px;
+text-align: center;
+font-size: 12px;
+}
+.item {
+  position: relative;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  height: 100vh;
+  top: 50px;
+}
+
+.item .box{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 25px;
+  background-size: cover;
+  
+}
+
+.item .box::before{
+ content: '';
+ position: absolute;
+ top: 20px;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ inset: 0;
+ background: inherit;
+ border-radius: 25px;
+ filter: blur(5px);
+ background-size: cover;
+ opacity: 100;
+ z-index: -1;
+
+}
+
+
+
+
+
+
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  width: 7px;
+  background: #efe7e7;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left:16px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 28px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 4px;
+    height: 32px;
+  }
+  50%, 100% {
+    top: 12px;
+    height: 16px;
+  }
+}

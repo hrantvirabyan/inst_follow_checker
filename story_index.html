@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FTO</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navMenu">
+      <a href="home.html">home</a>
+      <a href="Menu.html">menu</a>
+      <a href="about.html">about</a>
+      <a href="#"> faq</a>
+      <div class="dot"></div>
+    </nav>
+    <div class="line-container">
+      <hr class="menu-line">
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="content">
+      <div class="form">
+        <input type="text" id="profile_username" placeholder="Enter your username">
+        <button type="submit" id="get_user_story" onclick="showDiv()">View</button>
+        <div id="profile_picture_container" style="display: none;">
+          <img id="profile_picture" src="" alt="Profile Picture">
+        </div>
+        <div ></div>
+      </div>
+    </div>
+    <div id="loading" class="lds-facebook" style="display: none;"><div></div><div></div><div></div></div>
+  </div>
+
+  <script src="story_script.js"></script>
+</body>
+</html>
